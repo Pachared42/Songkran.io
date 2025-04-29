@@ -1,0 +1,87 @@
+body {
+    background-color: #5dade2;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #E74C3C;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 15px;
+    font-size: 18px;
+}
+th {
+    background-color: #f7dc6f;
+}
+tr:nth-child(even) {
+    background-color: #f9e79f;
+}
+tr:nth-child(odd) td:first-child {
+    background-color: #f7dc6f;
+}
+td:first-child {
+    width: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+.highlight {
+    color: #ff1800;
+    font-weight: bold;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 40px;
+}
+.buttons button {
+    background-color: #E74C3C;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttons button:hover {
+    background-color: #c0392b;
+}
+.buttons a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    th, td {
+        font-size: 16px;
+    }
+    .buttons button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
